@@ -81,7 +81,7 @@ const Create = () => {
           style={{ marginBottom: "20px" }}
         />
         <FormControl>
-          <FormLabel>Note Catagories</FormLabel>
+          <FormLabel>Note Catagory</FormLabel>
           <RadioGroup
          
             value={category}

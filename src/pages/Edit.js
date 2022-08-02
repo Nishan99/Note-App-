@@ -122,7 +122,7 @@ const Edit = () => {
             />
 
             <FormControl>
-              <FormLabel>Note Catagories</FormLabel>
+              <FormLabel>Note Catagory</FormLabel>
               <RadioGroup
                 
                 onChange={(e) => setData({ ...data, category: e.target.value })}
