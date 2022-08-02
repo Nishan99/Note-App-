@@ -1,3 +1,22 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "title": "About App",
+      "details": "CRUD app is made using react, material UI, create, update, read and delete are the function of this app.",
+      "category": "",
+      "id": 2
+    },
+    {
+      "title": "To Do",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "category": "remainder",
+      "id": 3
+    },
+    {
+      "title": "Working Task",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "category": "work",
+      "id": 4
+    }
+  ]
 }
