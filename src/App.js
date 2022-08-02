@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Notes from "./pages/Notes";
+import Create from "./pages/Create";
+import { ThemeProvider } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { deepOrange, lightGreen } from "@mui/material/colors";
+import Layout from "./components/Layout";
+import Edit from "./pages/Edit";
+
+const theme = createTheme({
+  palette: {
+    primary: lightGreen,
+  },
+  typography: {
+    fontFamily: "Quicksand",
+    fontSize: 18,
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Notes />}></Route>
+          <Route path="/create" element={<Create />}></Route>
+          <Route path="/edit/:id" element={<Edit/>}></Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
