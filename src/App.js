@@ -4,7 +4,7 @@ import "./App.css";
 import Notes from "./pages/Notes";
 import Create from "./pages/Create";
 
-import { createTheme } from "@mui/material/styles";
+
 
 import Layout from "./components/Layout";
 import Edit from "./pages/Edit";
