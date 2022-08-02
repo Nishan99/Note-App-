@@ -8,10 +8,10 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { Alert, FormControl, FormLabel } from "@mui/material";
-import { useNavigate, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 const Edit = () => {
-  const navigate = useNavigate()
+  
   const { id } = useParams();
   const [isLoad, setIsLoad] = useState(false);
   const [detailsError, setDetailsError] = useState(false);
@@ -68,7 +68,7 @@ const Edit = () => {
         headers:{
           'Content-type':'application/json'
         },
-        body:JSON.stringify(data)
+       
       }).then(()=>complete())
     }
 

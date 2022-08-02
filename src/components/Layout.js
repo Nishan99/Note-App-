@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
         <List>
           {menuItems.map((item, index) => (
            
-            <ListItem key={index} disablePadding onClick={()=>navigate(`${item.path}`)} style={location.pathname == item.path ? styles.active : null}>
+            <ListItem key={index} disablePadding onClick={()=>navigate(`${item.path}`)} style={location.pathname ===   item.path ? styles.active : null}>
               <ListItemButton>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
