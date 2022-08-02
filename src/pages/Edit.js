@@ -36,7 +36,7 @@ const Edit = () => {
         })
       );
     setIsLoad(true);
-  }, []);
+  }, [id]);
 
   console.log(data);
 

@@ -21,7 +21,7 @@ const Notes = () => {
       method: "DELETE",
     });
 
-    const updatedItem = data.filter((item) => item.id != id);
+    const updatedItem = data.filter((item) => item.id !== id);
     setData(updatedItem);
   };
 

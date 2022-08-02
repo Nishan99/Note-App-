@@ -38,13 +38,13 @@ export const styles={
     width:`calc(100% - ${drawerWidth}px)`
   },
   avatar:(item)=>{
-   if(item == 'remainder'){
+   if(item === 'remainder'){
     return pink[500]
    }
-   if(item == 'work'){
+   if(item === 'work'){
     return purple[500]
    }
-   if(item == 'money'){
+   if(item === 'money'){
     return teal[500]
    }
 
